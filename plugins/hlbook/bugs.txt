@@ -1,0 +1,1 @@
+book_time show all/show available does not work unless you are logged in

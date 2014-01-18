@@ -1,0 +1,27 @@
+<LAYOUT>
+		<STARTHTML>
+		<HEAD/>
+		<BODY>
+		<TINCLUDE SRC="logo2.html"/>
+		<TINCLUDE SRC="owner_viewclosed.html"/>
+
+		<TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+		<TR>
+			<TD WIDTH="100%" VALIGN="TOP" STYLE="padding-left: 20px;">
+				<BR/><CONTENT/>
+			</TD>
+			<TD WIDTH="10">
+				<FORCE WIDTH="10"/>
+			</TD>
+
+			<TD WIDTH="175" VALIGN="TOP" ALIGN="center" STYLE="padding-right: 20px;">
+				<BR/>
+				<INCLUDE SRC="include/shots.inc"/>
+				<FORCE WIDTH="175"/>
+			</TD>
+		</TR>
+		</TABLE>
+		<INCLUDE SRC="include/footer.inc"/>
+		</BODY>
+	</STARTHTML>
+</LAYOUT>

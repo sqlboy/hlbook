@@ -1,0 +1,21 @@
+<? $id = $_GET["bookid"];?>
+<tr valign="top"> 
+<td>&nbsp;</td>
+    <td align="right"><table width="90%" border="0" cellpadding="0" cellspacing="0" bgcolor="#E1E1E1">
+	<tr valign="middle"> 
+	<td width="227"><img src="themes/black/subcap.gif" width="43" height="18"></td>
+					<td width="33%"><a href="<? echo SCRIPT_URL . "?mode=hlbook&task=owner_viewclosed&bookid=$id";?>" class="black">&nbsp;MATCH&nbsp;DETAILS&nbsp;</a></td>
+
+
+<?
+if(get_option("hlbook","scrn_allow_uploads")) {
+?>
+		<td width="33%"><a href="<? echo SCRIPT_URL . "?mode=hlbook&task=owner_ulshots&bookid=$id";?>" class="black">&nbsp;UPLOAD&nbsp;SHOTS&nbsp;</a></td>
+    <td width="33%"><a href="<? echo SCRIPT_URL . "?mode=hlbook&task=owner_viewshots&bookid=$id";?>" class="black">&nbsp;VIEW&nbsp;SHOTS&nbsp;</a></td>
+<?
+}
+?>
+</tr>
+</table></td>
+  </tr>
+</table>

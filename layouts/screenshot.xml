@@ -1,0 +1,17 @@
+<LAYOUT>
+		<STARTHTML>
+		<HEAD>
+		</HEAD>
+
+		<BODY>
+		<LOGO/>
+		<TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+		<TR><TD VALIGN="CENTER" ALIGN="CENTER">
+			<BR/>
+			<CONTENT/>
+		</TD></TR>
+		</TABLE>
+		<INCLUDE SRC="include/footer.inc"/>
+		</BODY>
+	</STARTHTML>
+</LAYOUT>

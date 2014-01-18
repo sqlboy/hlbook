@@ -1,0 +1,96 @@
+<style type="text/css">
+<!--
+.wtf {}
+
+.TableBody { border: 1px solid #126612; -moz-border-radius: 5;}
+.TableBodyTD { padding: 5px 5px 5px 5px; background-color: #000000;}
+.TableBodyTD1 { padding: 5px 5px 5px 5px; background-color: #113311;}
+.TableBodyTD2 { padding: 5px 5px 5px 5px; background-color: #002200;}
+
+.TableBodyFONT { font-size: 12px; font-family: Verdana; color: #FFFFFF; }
+.TableBodyFONT a:link { color: #FFFFFF; font-size: 12px; font-family: Verdana; text-decoration: none; }
+.TableBodyFONT a:visited { color:  #FFFFFF; font-size: 12px; font-family: Verdana; text-decoration: none;}
+.TableBodyFONT a:hover { color:  #00FF00; font-size: 12px; font-family: Verdana; background-color: #125512;}
+
+.TableLabelsTD { background-color: #356635; padding: 5px 5px 5px 5px;}
+.TableLabelsFONT { color: #E1E1E1; font-family: Verdana; font-size: 12px; font-family: Verdana; font-weight: bold;}
+
+.TableHeadTD { background-color: #005500; padding-left: 5px; padding-top: 5px; padding-bottom: 5px;}
+.TableHeadFONT { align: right; font-size: 15px; font-family: Verdana; font-weight: bold; color: #FFFFFF; }
+.TableHeadFONT a:link { font-size: 15px; font-family: Verdana; font-weight: bold; color: #000000;}
+.TableHeadFONT a:visited { font-size: 15px; font-family: Verdana; font-weight: bold; color: #000000;}
+
+.TableFootTD { background-color: #005500; padding-right: 5px; padding-bottom: 5px; padding-top: 7px }
+.TableFootFONT { font-size: 12px; font-family: Verdana; }
+.TableFootFONT a:link { color: #000000; font-size: 12px; font-family: Verdana; } 
+.TableFootFONT a:visited { color: #000000; font-size: 12px; font-family: Verdana; } 
+
+.TableNotesFONT { font-size: 10px; font-family: Verdana; color: #FFFF00; }
+.TableRowTD { background-color: #003300; padding: 5px 5px 5px 5px;}
+.TableRowFont { font-size: 12px; font-family: Verdana; font-weight: bold; color: #FFFFFF; }
+
+.PageFontMedium { font-size: 15px; font-family: Verdana; color: #FFFFFF; }
+.PageFontLarge { font-size: 19px; font-family: Verdana; color: #FFFFFF; }
+.PageFontSmall { font-size: 10px; font-family: Verdana,Verdana; color: #FFFFFF; }
+.PageFontSmall a:link{ font-size: 10px; font-family: Verdana,Verdana; color: #FFFFFF; }
+.PageFontSmall a:visited{ font-size: 10px; font-family: Verdana,Verdana; color: #FFFFFF; }
+
+.ListBody { border: 1px solid #126612; -moz-border-radius: 5;}
+.ListBodyTD { padding: 5px 5px 5px 5px; background-color: #001100;}
+.ListBodyFONT { font-size: 12px; font-family: Verdana; color: #FFFFFF; }
+.ListBodyFONT a:link { font-size: 12px; font-family: Verdana; color: #FFFFFF; text-decoration: none;}
+.ListBodyFONT a:visited { font-size: 12px; font-family: Verdana; color: #FFFFFF; text-decoration: none;}
+.ListBodyFONT a:hover { font-size: 12px; font-family: Verdana; color: #FFFFFF; text-decoration: none; font-weight: bold; background-color: #666666;}
+
+.ListBodyHead { background-color: #005500; padding: 5px 5px 5px 5px; }
+.ListHeadFONT { font-size: 12px; font-family: Verdana; color: #FFFFFF; font-weight: bold;}
+
+.SKeyFONT { font-size: 10px; font-family: Verdana; color: #CDCDCD; } 
+
+a {
+	color: Black;
+	font-family: Verdana, sans-serif;
+	font-size: xx-small;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+a:hover {
+	color: White;
+	font-family: Verdana, sans-serif;
+	text-decoration: none;
+	background: #126612;
+	}
+	
+a.black:hover {
+	color: White;
+	font-family: Verdana, sans-serif;
+	text-decoration: none;
+	background: Rust;
+	}	
+
+.TextBox { 
+	background-color: #000000; 
+	border: 1px dashed #888888; 
+	color: #FFFFFF; 
+	font-size : 12px;
+}
+
+.TextArea { 
+	background-color: #000000; 
+	border: 1px dashed #888888; 
+	color: #FFFFFF; 
+	font-size : 12px;
+}
+
+.Select { line-height : 90%; background-color: #000000; border: 1px dashed #888888; color: #FFFFFF; font-size : 12px;}
+.Checkbox { 
+	height : 13px;
+	width: 15px;
+	background-color: #126600; color: #FFFFFF; border: 1px dashed #888888; font-size : 12px;
+}
+
+-->
+</style>

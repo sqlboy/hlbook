@@ -1,0 +1,56 @@
+Page.body.body.bgcolor					=		#DE7D00;
+Page.body.body.link							=		#FFFFFF;
+Page.body.body.vlink						=		#FFFFFF;
+Page.body.body.alink						=		#FFFFFF;
+Page.body.body.leftmargin				=		0;
+Page.body.body.topmargin				=		0;
+Page.body.body.marginwidth				=		0;
+Page.body.body.marginheight			=		0;
+Page.body.font.class						=		PageFontMedium;
+Page.head.font.class						=		PageFontLarge;
+Page.foot.font.class						=		PageFontSmall;
+
+List.body.table.cellspacing					=		1;
+List.body.table.cellpadding					=		0;
+List.body.table.class						=ListBody;
+List.body.td.align						=		center;
+List.body.td.class						=		ListBodyTD;
+List.body.font.class						=		ListBodyFONT;
+List.head.td.class						=		ListBodyHead;
+List.head.td.align						=	 	center;
+List.head.font.class						=		ListHeadFONT;
+
+SKey.body.font.class						=		SKeyFONT;
+SKey.body.table.cellspacing			=		0;
+SKey.body.table.cellpadding			=		3;
+
+#
+#Table Widget Style
+#
+Table.body.module.name					=		0;
+Table.body.module.format				=		png;
+Table.body.table.border					=		0;
+Table.body.table.cellspacing		=		1;
+Table.body.table.cellpadding		=		0;
+Table.body.table.class					=		TableBody;
+Table.body.td.class							=		TableBodyTD;
+Table.body.td1.class						=		TableBodyTD1;
+Table.body.td2.class						=		TableBodyTD2;
+Table.body.font.class						=		TableBodyFONT;
+
+Table.head.td.class							=		TableHeadTD;
+Table.head.td.align							=		center;
+Table.head.font.class						=		TableHeadFONT;
+Table.head.td.align							=		left;
+
+Table.row.td.class							=		TableRowTD;
+Table.row.font.class						=		TableBodyFONT;
+
+Table.foot.td.align							=		right;
+Table.foot.td.class							=		TableFootTD;
+Table.foot.font.class						=		TableFootFONT;
+
+Table.labels.td.valign					=		bottom;
+Table.labels.td.class						=		TableLabelsTD;
+Table.labels.font.class					=		TableLabelsFONT;
+Table.notes.font.class					=		TableNotesFONT;

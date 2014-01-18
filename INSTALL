@@ -1,0 +1,127 @@
+Installation
+------------
+
+0. Introduction
+
+The Half-Life Booking system (HLB) is an open source application written in PHP
+and Perl.  Its designed to turn servers into "time shares" that clans can use
+for matching,practices,tryouts, etc.
+
+I started writing HLB because I was getting emails everyday from poeple
+asking to use my public servers for clan matches/practices.  After some
+bad experiences letting regular clans use rcon on the pubs I set out
+to write a booking application.
+
+To get help, visit http://hlb.playway.net
+
+1. How it works.
+
+HLB is actually composed of theee different applications.
+
+Web Interface 	- The user interface to HLB
+HLBook		- controls setting up the servers, runs out of crond	
+HLogd		- server log clearing house
+
+When a user books a match from the web interface the information is placed
+into the backend database.  When the match is ready to become active, HLBook
+contacts the server and issues the setup commands.  It changes the server hostname,
+the server password, the server config file, and last the map, kicking all connected
+players if any.  At this point, the booking is considered "In Progress".  Your server
+should always sent its server logs to the HLogd process.  Hlogd will open a file
+and store the logs until the booking is "Closed", at which point it zips them up and
+moves them in place for users to download.
+
+When a booking is closed, the server will default back to its "Mode" settings.  For 24/7
+bookable servers, the only mode they'll be in is "bookable" mode.   With HLB, you
+can also run part time bookable/private/public/offline servers.  Example.  If you wanted
+the server to be public from Midnight to Noon, then private from Noon to 6pm, then bookable
+for 6 hours from 6pm to Midnight, you can do that.  HLBook will handle it all for you,
+setting new passwords, new rcon pass, etc.
+
+2.  Getting the beast installed
+
+If you are unfamiliar to Linux then there is probably now way your going to get
+this version of HLB installed.  We are working on an installer program that should
+make things a lot easier in the future but this version is more of a "manual" type
+install.  Not to mention, HLB has ALOT of dependencies that need to be installed 
+and running before you can use HLB.
+
+You will need:
+
+Apache (tested with 2.x and 1.3.x)
+PHP 4.2.2+ (tested on 4.2.2,4.2.3, and 4.3.0 w/GD 2.X + sockets)
+MySQL 3.23.54+ (since all below have exploit)
+Perl  (tested with 5.6.1 and 5.8.0)
+
+Perl Modules: (I bundled a few just in case)
+DBI/DBD-MySQL of course + all dependencies
+Config::INI
+Net::Telnet
+
+3.  The tarball
+
+These instructions are going to be really really brief.
+
+First, untar/gz the hlbook tarball.  It will create an hlbook directory.  FROM
+HERE ON OUT, I'M GOING TO CALL IT HLROOT.  So, if I write cd HLROOT/scripts, then
+you know what to do.
+
+4.  SQL Table schema.
+
+The SQL schema is in HLROOT/conf/hlbook.sql.  In case you forgot, you'll need
+to create a database for hlbook as well as a username and password.  Then you
+do to install the the hlbook tables:
+
+mysql -u hlbook -p hlbook_db < hlbook.sql
+
+5.  PHPStep Setup 
+
+PHPStep is a toolkit writtin in PHP designed by Playway.net for rapid website 
+development.  A recent somewhat stable CVS version of PHPStep comes bundled with 
+HLBook.  Getting  PHPStep setup is pretty easy.  All the settings are in the 
+HLROOT/webdocs/index.php file. Open that file and start editing.   There are 
+some instructions in that file.
+
+6.  HLBook Web Interface Setup
+
+Once you have PHPStep configured, then the pages should be coming up.  Login using the
+default admin username and password which happen to be: 
+
+username: admin 
+password: fool69
+
+After logging in, click on the "OPTIONS" button on the main toolbar.  Now, in the menu
+on the left, click setup.  Here is where the rest of the site feature setup stuff
+is located.   You can mess with it now or deal with it later.
+
+7. HLBook & HLogd
+
+These are the two apps that make things happen.  HLBook doing the booking and HLogd
+collecting logs and hopefully keeping track of rcon, connected players, and log files.
+
+First open HLROOT/scripts/hlbook/hlbook.ini and edit the settings. There are comments
+in the file.  After tha you'll need to edit HLROOT/scripts/hlogd/hlogd.ini and enter
+in most of the same settings.  Both of these apps need to talk to the DB server as well
+as eachother and the same servers.
+
+8. Starting them up.
+
+HLBook is a crond job.  There is a crond.sh script in the hlbook dir.  All you do is
+add it to your users crontab to run every minute.  You could do like
+
+crontab -e
+
+then add:
+*/1 * * * *	/home/me/hlbook-0.99-openbeta/scripts/hlbook/crond.sh
+
+then save and close.  HLBook writes a log file
+
+Staring HLogd is a little easier.  You pretty much just execute it and it will
+background itself.
+
+
+9. So, now you have all the pieces running and hopefully configured right.  Now its
+time to use the web interface, add some servers, book some servers, etc.  Go ahead
+and give it a try.
+
+If you have problems, questions, feature requests, etc, visit http://hlb.playway.net

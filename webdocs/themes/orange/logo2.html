@@ -1,0 +1,31 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="top"> 
+    <td width="1"><a href="index.php"><img src="themes/orange/logo1v6_orange.gif" width="180" height="73" border="0"></a></td>
+    <td background="themes/orange/bg1_org.gif">&nbsp;</td>
+    <td width="99" rowspan="3"><img src="themes/orange/logo1v6r_org_sub.gif" width="99" height="111"></td>
+  </tr>
+  <tr valign="top"> 
+    <td width="1"><img src="themes/orange/logo1v6bottom_org.gif" width="180" height="20"></td>
+    <td align="right" background="themes/orange/bg2_org.gif"> 
+      <table width="90%" border="0" cellpadding="0" cellspacing="0">
+        <tr valign="middle"> 
+          <td colspan="5"><img src="themes/orange/spacer.gif" width="5" height="5"></td>
+        </tr>
+        <tr valign="middle"> 
+           <td width="26%"><a href="<? echo SCRIPT_URL . "?mode=hlbook&task=index";?>" class="black">&nbsp;SCHEDULED&nbsp;MATCHES&nbsp;</a></td>
+          <td width="23%"><a href="<? echo SCRIPT_URL . "?mode=hlbook&task=search_past";?>" class="black">&nbsp;PAST&nbsp;MATCHES&nbsp;</a></td>
+          <td width="19%"><a href="<? echo SCRIPT_URL . "?mode=hlbook&task=book_servers";?>" class="black">&nbsp;BOOK&nbsp;SERVER&nbsp;</a></td>
+         	<td width="18%"><a href="<? echo SCRIPT_URL . "?mode=hlbook&task=owner_profile";?>" class="black">&nbsp;OPTIONS&nbsp;</a></td>
+
+<? 
+if(is_authed()) {?>
+		<td><a href="<? echo SCRIPT_URL . "?mode=auth&task=logout";?>" class="black">&nbsp;LOGOUT&nbsp;</a></td>
+<?
+}
+else {?>
+<td><a href="<? echo SCRIPT_URL . "?mode=auth&task=login";?>" class="black">&nbsp;LOGIN&nbsp;</a></td>
+<?}
+?>
+        </tr>
+      </table> </td>
+  </tr>

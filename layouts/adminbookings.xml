@@ -1,0 +1,36 @@
+<LAYOUT>
+		<STARTHTML>
+		<HEAD>
+		</HEAD>
+
+		<BODY>
+		<TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+		<TR>
+			<TD WIDTH="100%" COLSPAN="3">
+			<INCLUDE SRC="include/maintoolbar.inc"/>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH="100%" COLSPAN="3">
+			<INCLUDE SRC="include/submenu_adminbookings.inc"/>
+			</TD>
+		</TR>
+
+		<TR>
+			<TD VALIGN="TOP" STYLE="padding-left: 20px">
+				<BR/>
+				<INCLUDE SRC="include/admin_sidemenu.inc"/>
+			</TD>
+
+			<TD><FORCE WIDTH="10"/></TD>
+
+			<TD WIDTH="100%" VALIGN="TOP" STYLE="padding-right: 20px;">
+				<BR/><CONTENT/>
+			</TD>
+		</TR>
+
+		</TABLE>
+		<INCLUDE SRC="include/footer.inc"/>
+		</BODY>
+	</STARTHTML>
+</LAYOUT>

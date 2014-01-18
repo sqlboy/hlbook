@@ -1,0 +1,19 @@
+<LAYOUT>
+		<STARTHTML>
+		<HEAD/>
+		<BODY>
+
+		<TINCLUDE SRC="logo2.html"/>
+		<TINCLUDE SRC="owner_servermon.html"/>
+
+		<TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+		<TR>
+			<TD WIDTH="100%" VALIGN="TOP" STYLE="padding-left: 20px; padding-right: 10px;">
+				<BR/><CONTENT/>
+			</TD>
+		</TR>
+		</TABLE>
+		<INCLUDE SRC="include/footer.inc"/>
+		</BODY>
+	</STARTHTML>
+</LAYOUT>
